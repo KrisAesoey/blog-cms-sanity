@@ -26,4 +26,14 @@ export const textBlocksType = defineType({
       ],
     }),
   ],
+  preview: {
+    select: {
+      textBlocks: 'items',
+    },
+    prepare: ({textBlocks}) => ({
+      title: textBlocks
+        ? `${textBlocks.length} text block${textBlocks.length === 1 ? '' : 's'}`
+        : 'empty',
+    }),
+  },
 })
