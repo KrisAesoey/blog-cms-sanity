@@ -1,3 +1,4 @@
+import {codeInput} from '@sanity/code-input'
 import {visionTool} from '@sanity/vision'
 import {defineConfig} from 'sanity'
 import {structureTool} from 'sanity/structure'
@@ -10,7 +11,7 @@ export default defineConfig({
   projectId: 'x2gstafu',
   dataset: 'production',
 
-  plugins: [structureTool(), visionTool()],
+  plugins: [codeInput(), structureTool(), visionTool()],
 
   schema: {
     types: schemaTypes,
