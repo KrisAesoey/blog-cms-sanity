@@ -11,6 +11,14 @@ export const articleType = defineType({
       validation: (Rule) => Rule.required(),
     }),
     defineField({
+      name: 'slug',
+      type: 'slug',
+      options: {
+        source: 'title',
+      },
+      validation: (Rule) => Rule.required(),
+    }),
+    defineField({
       name: 'publishingDate',
       type: 'datetime',
     }),
