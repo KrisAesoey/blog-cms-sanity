@@ -1,4 +1,4 @@
 import {articleType} from './documents'
-import {textBlocksType} from './objects'
+import {codeBlocksType, textBlocksType} from './objects'
 
-export const schemaTypes = [articleType, textBlocksType]
+export const schemaTypes = [articleType, codeBlocksType, textBlocksType]
