@@ -10,7 +10,9 @@
     "start": "sanity start",
     "build": "sanity build",
     "deploy": "sanity deploy",
-    "deploy-graphql": "sanity graphql deploy"
+    "deploy-graphql": "sanity graphql deploy",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "prettier": "prettier --write ."
   },
   "keywords": [
     "sanity"
@@ -24,16 +26,23 @@
     "styled-components": "^6.1.8"
   },
   "devDependencies": {
+    "@eslint/js": "^9.27.0",
     "@sanity/eslint-config-studio": "^4.0.0",
     "@types/react": "^18.0.25",
-    "eslint": "^8.6.0",
-    "prettier": "^3.0.2",
-    "typescript": "^5.1.6"
+    "eslint": "^8.57.1",
+    "eslint-config-prettier": "^10.1.5",
+    "eslint-plugin-prettier": "^5.4.0",
+    "eslint-plugin-react": "^7.37.5",
+    "globals": "^16.1.0",
+    "prettier": "^3.5.3",
+    "typescript": "^5.1.6",
+    "typescript-eslint": "^8.32.1"
   },
   "prettier": {
+    "bracketSpacing": true,
     "semi": false,
-    "printWidth": 100,
-    "bracketSpacing": false,
-    "singleQuote": true
+    "singleQuote": true,
+    "tabWidth": 2,
+    "trailingComma": "es5"
   }
 }
