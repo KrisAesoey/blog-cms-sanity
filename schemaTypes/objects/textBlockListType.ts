@@ -1,4 +1,4 @@
-import {defineField, defineType} from 'sanity'
+import { defineField, defineType } from 'sanity'
 
 export const textBlockListType = defineType({
   name: 'textBlockList',
@@ -9,14 +9,14 @@ export const textBlockListType = defineType({
       name: 'items',
       title: 'Items',
       type: 'array',
-      of: [{type: 'textBlock'}],
+      of: [{ type: 'textBlock' }],
     }),
   ],
   preview: {
     select: {
       textBlocks: 'items',
     },
-    prepare: ({textBlocks}) => ({
+    prepare: ({ textBlocks }) => ({
       title: textBlocks
         ? `${textBlocks.length} text block${textBlocks.length === 1 ? '' : 's'}`
         : 'empty',

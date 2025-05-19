@@ -1,4 +1,4 @@
-import {defineField, defineType} from 'sanity'
+import { defineField, defineType } from 'sanity'
 
 export const codeBlockListType = defineType({
   name: 'codeBlockList',
@@ -9,7 +9,9 @@ export const codeBlockListType = defineType({
       name: 'items',
       title: 'Items',
       type: 'array',
-      of: [defineField({name: 'codeBlock', title: 'Code block', type: 'code'})],
+      of: [
+        defineField({ name: 'codeBlock', title: 'Code block', type: 'code' }),
+      ],
     },
   ],
 })
