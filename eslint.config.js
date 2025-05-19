@@ -3,7 +3,7 @@ import js from '@eslint/js'
 import prettier from 'eslint-config-prettier'
 import pluginPrettier from 'eslint-plugin-prettier'
 import pluginReact from 'eslint-plugin-react'
-import {defineConfig} from 'eslint/config'
+import { defineConfig } from 'eslint/config'
 import globals from 'globals'
 import tseslint from 'typescript-eslint'
 
@@ -16,6 +16,7 @@ export default defineConfig([
       globals: globals.browser,
     },
     plugins: {
+      react: pluginReact,
       prettier: pluginPrettier,
     },
     rules: {
