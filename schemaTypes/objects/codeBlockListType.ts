@@ -1,7 +1,7 @@
 import {defineField, defineType} from 'sanity'
 
-export const codeBlocksType = defineType({
-  name: 'codeBlocks',
+export const codeBlockListType = defineType({
+  name: 'codeBlockList',
   title: 'Code Blocks',
   type: 'object',
   fields: [
