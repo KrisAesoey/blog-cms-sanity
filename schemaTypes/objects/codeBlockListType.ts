@@ -14,4 +14,15 @@ export const codeBlockListType = defineType({
       ],
     },
   ],
+  preview: {
+    select: {
+      items: 'items',
+    },
+    prepare({ items }) {
+      const itemCount = items?.length || 0;
+      return {
+        title: `Code Blocks (${itemCount} item${itemCount === 1 ? '' : 's'})`,
+      };
+    },
+  },
 })
