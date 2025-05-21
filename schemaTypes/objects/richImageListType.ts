@@ -14,6 +14,7 @@ export const richImageListType = defineType({
           type: 'richImage',
         },
       ],
+      validation: (Rule) => Rule.required(),
     }),
   ],
   preview: {
