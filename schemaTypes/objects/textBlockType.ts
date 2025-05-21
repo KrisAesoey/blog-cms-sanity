@@ -10,6 +10,7 @@ export const textBlockType = defineType({
       title: 'Text',
       type: 'array',
       of: [{ type: 'block' }],
+      validation: (Rule) => Rule.required(),
     }),
   ],
 })

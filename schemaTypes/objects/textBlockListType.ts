@@ -10,6 +10,7 @@ export const textBlockListType = defineType({
       title: 'Items',
       type: 'array',
       of: [{ type: 'textBlock' }],
+      validation: (Rule) => Rule.required(),
     }),
   ],
   preview: {
