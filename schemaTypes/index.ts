@@ -1,9 +1,7 @@
-import { articleType } from './documents'
-import { codeBlockListType, textBlockListType, textBlockType } from './objects'
+import * as documents from './documents'
+import * as objects from './objects'
 
 export const schemaTypes = [
-  articleType,
-  codeBlockListType,
-  textBlockListType,
-  textBlockType,
+  ...Object.values(documents),
+  ...Object.values(objects),
 ]
