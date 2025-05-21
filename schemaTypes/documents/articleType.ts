@@ -26,7 +26,11 @@ export const articleType = defineType({
       name: 'content',
       title: 'Content',
       type: 'array',
-      of: [{ type: 'codeBlockList' }, { type: 'textBlockList' }],
+      of: [
+        { type: 'codeBlockList' },
+        { type: 'richImageList' },
+        { type: 'textBlockList' },
+      ],
     }),
   ],
 })
