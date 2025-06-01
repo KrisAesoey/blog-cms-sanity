@@ -1,3 +1,4 @@
+export { codeBlockType } from './codeBlockType'
 export { codeBlockListType } from './codeBlockListType'
 export { richImageListType } from './richImageListType'
 export { richImageType } from './richImageType'

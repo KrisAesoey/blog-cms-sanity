@@ -13,7 +13,7 @@ export const codeBlockListType = defineType({
         defineField({
           name: 'codeBlock',
           title: 'Code block',
-          type: 'code',
+          type: 'codeBlock',
         }),
       ],
       validation: (Rule) => Rule.required(),
